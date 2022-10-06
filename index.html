@@ -1,55 +1,82 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css" crossorigin="anonymous">
-    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css" crossorigin="anonymous">
+  <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+</head>
 
-    <div class="mt-4 p-5 bg-secondary text-white rounded">
-      <div class="row">
-          
-        <div class="col-2">
-          <img src="Me.jpg" alt="Me" class="rounded" style="width:100px;height:100px;">
-        </div>
+<body>
 
+  <div class="mt-4 p-5 bg-secondary text-white rounded">
+    <div class="row">
+
+      <div class="col-4">
+        <!--<img src="Me.jpg" alt="Me" class="rounded" style="width:100px;height:100px;">-->
+       
+        <h2>Vida laboral vs vida familiar</h2>
+
+        <p>Acá podemos ver ambas</p>
         
-        <div class="col-10">
-            <h1>Marvin Cruz Sandoval</h1>
-             <p>Entrando en el mundo del desarrollo web!</p>
-          </div>         
+        <p>Mira mis 2 facetas!</p>
+        
+        <button onclick="document.getElementById('myImage').src='Me.jpg'">Vida laboral</button>
+        
+        <img id="myImage" src="Me.jpg" style="width:75px;height:75px;">
+        
+        <button onclick="document.getElementById('myImage').src='Us.jpg'">Vida familiar</button>
+        
+        <button type="button" onclick="document.getElementById('myImage').style.width='125px'">Mas ancha la foto ché</button>
+        <button type="button" onclick="document.getElementById('myImage').style.width='75px'">Volver al tamanio inicial</button>
+        <button type="button" onclick="document.getElementById('myImage').style.display='none'">Escondamos la fotito</button>
+        <button type="button" onclick="document.getElementById('myImage').style.display='block'">Que aparezca la fotito</button>
+      </div>
+
+      
+      <div class="col-8">
+        <h1>Marvin Cruz Sandoval</h1>
+        <p>Entrando en el mundo del desarrollo web!</p>
+        
+
+
+
       </div>
     </div>
+  </div>
 
 
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-sm-4">
-          <h3>Sobre mi</h3>
-          <p>Nací en El Salvador, vivo en Argentina desde 2007, desarrollando soluciones para el sector energético</p>
-          <p>Me considero un hombre de familia, que disfruta el aprendizaje contínuo, el futuro que queremos está en la constancia y disciplina diaria.</p>
-        </div>
-        <div class="col-sm-4">
-          <h3>Conocimientos</h3>
-          <p>Simuladores de redes eléctricas, manejo de bases de datos, SAP, Office.</p>
-          <p>Gestión de proyectos de construcción, auditorías técnicas</p>
-        </div>
-        <div class="col-sm-4">
-          <h3>Hacia donde vamos</h3>        
-          <p>Mi objetivo a corto plazo es completar la formación como Full Stack developer para integrar mi formación y experiencia y así bindar soluciones de calidad.</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-        </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Sobre mi</h3>
+        <p>Nací en El Salvador, vivo en Argentina desde 2007, desarrollando soluciones para el sector energético</p>
+        <p>Me considero un hombre de familia, que disfruta el aprendizaje contínuo, el futuro que queremos está en la
+          constancia y disciplina diaria.</p>
+      
+      </div>
+      <div class="col-sm-4">
+        <h3>Conocimientos</h3>
+        <p>Simuladores de redes eléctricas, manejo de bases de datos, SAP, Office.</p>
+        <p>Gestión de proyectos de construcción, auditorías técnicas</p>
+      </div>
+      <div class="col-sm-4">
+        <h3>Hacia donde vamos</h3>
+        <p>Mi objetivo a corto plazo es completar la formación como Full Stack developer para integrar mi formación y
+          experiencia y así bindar soluciones de calidad.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
       </div>
     </div>
+  </div>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
